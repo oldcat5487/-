@@ -6,40 +6,44 @@ using namespace std;
 
 
 void play_game(){
-	int enemy_win=0;		/*獲勝條件*/
-	int player_win=0;
-	
-	int status=0,enemy_status=1, player_status = 1;
-	int poker1[15]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,0};/*抽6張牌的撲克(0沒用)*/ 
-	int poker2[15]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,0};
-	int poker3[15]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,0};
-	int poker4[15]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,0};
-	int poker5[15]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,0};
-	int poker6[15]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,0};
-	
-	int enemy[8]={};/*敵方手牌初始狀態*/
-	int player[8]={};/*玩家手牌初始狀態*/
+	int enemy_win=0;
+    int player_win=0;
 
-	while(enemy_win <2 && player_win <2){
-		
-			/*確認初始手牌*/
-			enemy[1]=poker1[rand()%13+1];
-			enemy[2]=poker2[rand()%13+1];
-			enemy[3]=poker3[rand()%13+1];
-			enemy[4]=poker4[rand()%13+1];
-			enemy[5]=poker5[rand()%13+1];
-			while(enemy[5] == enemy[1])enemy[5]=poker1[rand()%13+2];	/*去掉重複牌*/
-			enemy[6]=poker6[rand()%13+1];
-			while(enemy[6] == enemy[2] or enemy[6] == enemy[1])enemy[6]=poker2[rand()%13+2];	/*去掉重複牌*/
-			
-			player[1]=poker1[rand()%13+1];
-			player[2]=poker2[rand()%13+1];
-			player[3]=poker3[rand()%13+1];
-			player[4]=poker4[rand()%13+1];
-			player[5]=poker5[rand()%13+1];
-			while(player[5]==player[1])player[5]=poker1[rand()%13+2];	/*去掉重複牌*/ 
-			player[6]=poker6[rand()%13+1];
-			while(player[6]==player[2] or player[6]==player[1])player[6]=poker2[rand()%13+2];	/*去掉重複牌*/
+    int status=0,enemy_status=1,player_status=1;
+
+    int enemy[8]={};
+    int player[8]={};
+
+    while(enemy_win<2 && player_win<2){
+
+        /*確認初始手牌*/
+        enemy[1]=drawCard();
+        enemy[2]=drawCard();
+        enemy[3]=drawCard();
+        enemy[4]=drawCard();
+        enemy[5]=drawCard();
+
+        while(enemy[5]==enemy[1])
+            enemy[5]=drawCard();
+
+        enemy[6]=drawCard();
+
+        while(enemy[6]==enemy[2] || enemy[6]==enemy[1])
+            enemy[6]=drawCard();
+
+        player[1]=drawCard();
+        player[2]=drawCard();
+        player[3]=drawCard();
+        player[4]=drawCard();
+        player[5]=drawCard();
+
+        while(player[5]==player[1])
+            player[5]=drawCard();
+
+        player[6]=drawCard();
+
+        while(player[6]==player[2] || player[6]==player[1])
+            player[6]=drawCard();
 			/*確認初始手牌*/
 			
 			while(enemy_win<2 && player_win<2){
