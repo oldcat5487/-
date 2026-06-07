@@ -1,6 +1,7 @@
-#include "game.h"
+#include "Game.h"
 
-int main() {
+int main()
+{
     game_introduction();
     play_game();
     return 0;
