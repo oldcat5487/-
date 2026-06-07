@@ -16,7 +16,7 @@ void play_game(){
 
     while(enemy_win<2 && player_win<2){
 
-        /*確認初始手牌*/
+        /*初始手牌*/
         enemy[1]=drawCard();
         enemy[2]=drawCard();
         enemy[3]=drawCard();
