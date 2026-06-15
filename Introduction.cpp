@@ -5,5 +5,5 @@ using namespace std;
 
 void game_introduction()
 {
-    cout<<"歡迎來到21點遊戲"<<endl;
+    cout << "Welcome to BlackJack" << endl;
 }
