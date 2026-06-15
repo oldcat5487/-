@@ -18,5 +18,5 @@
 
 安裝方式:![下載方式](https://github.com/oldcat5487/-/blob/main/pc/21%E9%BB%9E%E4%B8%8B%E5%A6%82%E4%BD%95%E4%B8%8B%E8%BC%89.png)
 
-遊戲畫面:![遊戲畫面1](https://github.com/oldcat5487/-/blob/main/pc/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-06-15%20115435.png).
-![遊戲畫面2](https://github.com/oldcat5487/-/blob/main/pc/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-06-15%20115524.png).
+遊戲畫面:![遊戲畫面1](https://github.com/oldcat5487/-/blob/main/pc/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-06-15%20115435.png)
+![遊戲畫面2](https://github.com/oldcat5487/-/blob/main/pc/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202026-06-15%20115524.png)
